@@ -33,7 +33,7 @@ public class Oppgave11 {
         tall2 = (innTall % 100) / 10;
         tall3 = innTall % 10;
 
-        int tverrsum = tall1 +tall2 + tall3;
+        int tverrsum = tall1 + tall2 + tall3;
 
         System.out.println("Tverrsummen av " + innTall + " er " + tverrsum);
 
