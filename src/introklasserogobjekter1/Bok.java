@@ -17,7 +17,7 @@ public class Bok{
 
     public void skrivUtOppgave2(){
         String melding = "Tittel: " + tittel + ", pris: " + pris + ", forfatter: " + forfatter +
-                ", isbn-nummer: " + isbn;
+                ", iSBN-nummer: " + isbn;
         JOptionPane.showMessageDialog(null, melding);
     }
 }

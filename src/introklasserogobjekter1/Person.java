@@ -8,13 +8,14 @@ public class Person {
     public String telefonnr;
     public int fodselsar;
 
-    public int alder(){
+    public int finnAlder(){
         return 2020 - fodselsar;
     }
 
     public void skrivUtOppgave3(int alder){
         String melding = navn + " med adresse " + adresse + " med telefonnummer " + telefonnr +
                 " er " + alder + " år.";
+
         System.out.println(melding);
     }
 

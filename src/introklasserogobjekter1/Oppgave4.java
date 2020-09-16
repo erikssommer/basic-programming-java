@@ -10,7 +10,7 @@ public class Oppgave4 {
         enPerson.telefonnr = JOptionPane.showInputDialog("Telefonnr: ");
         enPerson.fodselsar = Integer.parseInt(JOptionPane.showInputDialog("Fødselsår: "));
 
-        int alder = enPerson.alder();
+        int alder = enPerson.finnAlder();
 
         enPerson.skrivUtOppgave4(alder);
     }

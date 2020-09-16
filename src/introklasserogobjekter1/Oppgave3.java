@@ -8,7 +8,7 @@ public class Oppgave3 {
         enPerson.adresse = "Osloveien 23";
         enPerson.fodselsar = 1989;
 
-        int alder = enPerson.alder();
+        int alder = enPerson.finnAlder();
 
         enPerson.skrivUtOppgave3(alder);
     }

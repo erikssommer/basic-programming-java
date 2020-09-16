@@ -17,4 +17,5 @@ public class Kalkulator {
     public static double dividere(double tall1, double tall2){
         return tall1 / tall2;
     }
+
 }
