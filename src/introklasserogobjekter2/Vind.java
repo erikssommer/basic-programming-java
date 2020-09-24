@@ -1,7 +1,7 @@
 package introklasserogobjekter2;
 
 public class Vind {
-    private double vindhastighet = 0.0;
+    private double vindhastighet;
 
     public Vind (double vindhastighet) {
         this.vindhastighet = vindhastighet;
@@ -34,7 +34,7 @@ public class Vind {
     }
 
     public int getBeaufort() {
-        int beaufort =  (int) (Math.pow(vindhastighet / 3.01, 0.6666) +0.5);
+        int beaufort = (int) (Math.pow(vindhastighet / 3.01, 0.6666) +0.5);
         if (beaufort > 12) {
             beaufort = 12;
         }

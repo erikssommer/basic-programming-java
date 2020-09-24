@@ -11,7 +11,7 @@ public class Oppgave2 {
         if(alder >= 18){
             showMessageDialog(null, "Du kan ta førerkortet for bil da du er gammel nok");
         }
-        if(alder <18){
+        if(alder < 18){
             showMessageDialog(null,"Du er for ung til å ta førerkort for bil");
         }
     }

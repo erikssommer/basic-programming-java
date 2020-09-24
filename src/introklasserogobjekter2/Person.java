@@ -9,7 +9,6 @@ public class Person {
     private String adresse;
     private String telefonnr;
 
-    //Konstruktør med alle atributtene
     public Person(String fornavn, String etternavn, String adresse, String telefonnr) {
         this.fornavn = fornavn;
         this.etternavn = etternavn;
@@ -17,9 +16,6 @@ public class Person {
         this.telefonnr = telefonnr;
     }
 
-    //get/set-metoder for hver enkelt atributt
-    //get-metoder returnerer verdien til atributten. Tar ikke inn noen parametere
-    //set-metoden setter atributten til en ny verdi. Tar inn ny verdi som parameter
     public String getFornavn() {
         return fornavn;
     }
@@ -55,9 +51,9 @@ public class Person {
     //Andre metoder som utfører oppgaver
 
     public void skrivUt(){
-        String ut = "Navn : "+fornavn+" "+etternavn+"\n"+
-                "Adresse : "+adresse+"\n"+
-                "Telefonnr : "+telefonnr+"\n";
+        String ut = "Navn : "+this.fornavn+" "+this.etternavn+"\n"+
+                "Adresse : "+this.adresse+"\n"+
+                "Telefonnr : "+this.telefonnr+"\n";
         showMessageDialog(null,ut);
     }
 }

@@ -31,7 +31,7 @@ public class Konto {
         den nye saldoen.  */
 
     public String settInn(double belop){
-        saldo = saldo + belop;
+        this.saldo += belop;
         return "Den nye saldoen er : "+String.format("%.2f", saldo)+" kr";
     }
 
@@ -43,14 +43,13 @@ public class Konto {
         skal den returnerte teksten inneholde informasjon om det. */
 
     public String taUt(double belop) {
-        String ut;
+
         if (belop <= saldo) {
-            saldo = saldo - belop;
-            ut = "Den nye saldoen er : " + String.format("%.2f", saldo) + " kr";
+            this.saldo -= belop;
+            return "Den nye saldoen er : " + String.format("%.2f", saldo) + " kr";
         } else {
-            ut = "Ikke dekning på konto";
+            return "Ikke dekning på konto";
         }
-        return ut;
     }
 
 }
