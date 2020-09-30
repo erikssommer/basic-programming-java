@@ -12,7 +12,7 @@ public class Oppgave2_1 {
                 }
             }
             if (c == 2){
-                System.out.println("" + i);
+                System.out.println(i);
             }
             i++;
         }

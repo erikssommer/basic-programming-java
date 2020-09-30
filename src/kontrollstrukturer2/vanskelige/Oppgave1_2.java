@@ -12,6 +12,6 @@ public class Oppgave1_2 {
             pi += 4 * (Math.pow(-1, i)/(2*i+1));
         }
 
-        System.out.println("Med " + iterasjoner + " iterasoner blir pi = " + pi);
+        System.out.println("Med " + iterasjoner + " iterasjoner blir pi = " + pi);
     }
 }

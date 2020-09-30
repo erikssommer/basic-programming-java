@@ -5,13 +5,15 @@ public class Oppgave4 {
         int sum = 0;
         int teller = 0;
 
-        for (int i = 0; i < 100; i+=2){
-            sum += i;
-            teller++;
+        for (int i = 0; i < 100; i++){
+            if (i % 2 == 0){
+                sum += i;
+                teller++;
+            }
         }
 
-        double gjennomsnitt = (double) sum / (double) teller;
+        double snitt = (double) sum / (double) teller;
 
-        System.out.println("Gjennomsnittet blir: " + gjennomsnitt);
+        System.out.println("Gjennomsnittet blir: " + snitt);
     }
 }
