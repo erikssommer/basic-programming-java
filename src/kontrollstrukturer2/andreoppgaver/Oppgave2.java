@@ -10,13 +10,13 @@ public class Oppgave2 {
         double totaltPris = 0;
 
         while (varePris > 0){
-            totaltPris+= varePris;
+            totaltPris += varePris;
             innVarePris = showInputDialog("Skriv inn prisen på varen og avslutt med 0");
             varePris = Double.parseDouble(innVarePris);
         }
 
         double kommisjon = totaltPris * 0.09;
 
-        showMessageDialog(null, "Kommisjonen for totalt "+totaltPris+" kr blir "+kommisjon+" kr");
+        showMessageDialog(null, "Kommisjonen for totalt "+totaltPris+" kr blir " + kommisjon + " kr");
     }
 }

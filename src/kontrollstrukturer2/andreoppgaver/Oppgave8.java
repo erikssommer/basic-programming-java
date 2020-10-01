@@ -1,41 +1,45 @@
 package kontrollstrukturer2.andreoppgaver;
 
+import javax.swing.*;
+
 import static javax.swing.JOptionPane.showInputDialog;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class Oppgave8 {
     public static void main(String[] args) {
-        int nummer, tall1, tall2;
+        int nummer;
+        int tall1;
+        int tall2;
 
-        do{
-            nummer = Integer.parseInt(showInputDialog("Skriv inn et femsifret heltall:"));
-        } while (nummer < 10_000 || nummer > 100_000);
+        do {
+            nummer = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn et femsifret tall"));
+        } while (nummer < 10000 || nummer > 100000);
 
-        // her er nummer mellom 10_000 og 99_999
-        // sjekk første og siste tall
         boolean palindrom1 = false;
         boolean palindrom2 = false;
 
-        tall1 = nummer / 10_000;
-        tall2 = nummer % 10;
+        //Eks.: 12321
 
-        if(tall1 == tall2){
+        tall1 = nummer / 10000; //1
+        tall2 = nummer % 10; //1
+
+        if (tall1 == tall2){
             palindrom1 = true;
         }
 
-        nummer = (nummer - tall1 * 10_000)/10;
-        // sjekk første og siste tall
-        tall1 = nummer / 100;
-        tall2 = nummer % 10;
+        nummer = (nummer - tall1 * 10000)/10; //232
 
-        if(tall1 == tall2){
+        tall1 = nummer / 100; //2
+        tall2 = nummer % 10; //2
+
+        if (tall1 == tall2){
             palindrom2 = true;
         }
 
-        if(palindrom1 && palindrom2){
-            showMessageDialog(null,"Palindrom");
-        } else{
-            showMessageDialog(null,"Ikke palindrom");
+        if (palindrom1 && palindrom2){
+            JOptionPane.showMessageDialog(null, "Tallet er et palindrom");
+        }else {
+            JOptionPane.showMessageDialog(null, "Tallet er ikke et palindrom");
         }
     }
 }

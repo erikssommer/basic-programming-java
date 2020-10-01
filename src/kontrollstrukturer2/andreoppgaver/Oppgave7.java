@@ -14,6 +14,7 @@ public class Oppgave7 {
             }
             ut += "\n";
         }
+
         showMessageDialog(null, ut);
     }
 }
