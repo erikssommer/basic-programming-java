@@ -2,9 +2,13 @@ package kontrollstrukturer2.andreoppgaver;
 
 // Løsning med rekursjon. Det er ikke pensum, men velding kraftfullt.
 
+import javax.swing.*;
+
 public class Oppgave9_2 {
     public static void main(String[] args) {
-        System.out.println(fak(3));
+        int tall = Integer.parseInt(JOptionPane.showInputDialog("Skriv inn et heltall for fakultet: "));
+
+        System.out.println(fak(tall));
     }
 
     public static long fak(int a){
