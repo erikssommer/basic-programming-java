@@ -8,6 +8,7 @@ public class Oppgave5 {
         int nummer;
         int storsteTall = 0;
         int nestStorsteTall = 0;
+
         for (int teller = 0; teller <= 10; teller++){
             nummer = Integer.parseInt(showInputDialog("Skriv inn et heltall:"));
 

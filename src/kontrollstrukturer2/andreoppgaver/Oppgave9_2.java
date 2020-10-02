@@ -1,6 +1,6 @@
 package kontrollstrukturer2.andreoppgaver;
 
-// Løsning med rekursjon. Det er ikke pensum, men velding kraftfullt.
+// Løsning med rekursjon. Det er ikke pensum, men veldig nyttig.
 
 import javax.swing.*;
 
