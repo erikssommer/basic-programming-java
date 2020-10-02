@@ -11,9 +11,11 @@ public class Oppgave5 {
         for (int teller = 0; teller <= 10; teller++){
             nummer = Integer.parseInt(showInputDialog("Skriv inn et heltall:"));
 
-            if(storsteTall < nummer){
+            if(nummer > storsteTall){
                 nestStorsteTall = storsteTall;
                 storsteTall = nummer;
+            }else if (nummer > nestStorsteTall){
+                nestStorsteTall = nummer;
             }
         }
         showMessageDialog(null, "Det største tallet er " + storsteTall + "\n" +
