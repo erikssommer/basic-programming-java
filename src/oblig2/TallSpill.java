@@ -29,7 +29,7 @@ public class TallSpill {
     /* Viser melding om at det ble gjettet riktig
       og antall gjetninger som ble brukt.
       Parametrene gir opplysninger om dette. */
-        showMessageDialog(null,"Du klarte det!\n" +
+        visMelding("Du klarte det!\n" +
                 "Riktig tall var " + gjetning + ". Du brukte " + antall + " forsøk.");
     }
 
