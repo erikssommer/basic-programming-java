@@ -5,6 +5,10 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 public class Oppgave5_2 {
     public static void main(String[] args) {
+
+        //Kommenteres ut for å støtte javafx i nyere ukesoppgaver. Bytt til nyere jdk for å kjøre koden
+
+        /*
         String maned = showInputDialog("Angi måned: ");
 
         switch (maned.toLowerCase()) {
@@ -14,5 +18,6 @@ public class Oppgave5_2 {
             case "mars", "april", "mai" -> showMessageDialog(null, "Det er vår");
             default -> showMessageDialog(null, "Feil input, ikke gyldig månedsnavn!");
         }
+         */
     }
 }
