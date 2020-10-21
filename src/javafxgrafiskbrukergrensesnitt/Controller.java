@@ -1,5 +1,9 @@
 package javafxgrafiskbrukergrensesnitt;
 
+/*
+ * NB! Bruk jdk 1.8 (versjon 8 av java)
+ */
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
