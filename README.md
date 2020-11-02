@@ -48,3 +48,9 @@ Oppdateres hver onsdag med løsninger til ukens oppgaver
     - Intro til javaFX
     - NB! Bruk jdk 1.8 (versjon 8 av java)
     - Første program
+12. Mer om klasser og objekter 1 🚘
+    - Objekter
+    - Referanser
+    - toString()-metode
+    - Statiske variabler
+    - Pakker
