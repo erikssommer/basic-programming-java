@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+*.fxml
 
 # For mac users
 *.DS_Store
