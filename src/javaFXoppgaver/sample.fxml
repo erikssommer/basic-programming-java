@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="javaFXoppgaver.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="406.0" prefWidth="433.0" GridPane.rowIndex="1">
+            <children>
+                <Button layoutX="48.0" layoutY="307.0" mnemonicParsing="false" onAction="#startKortTid" prefHeight="27.0" prefWidth="117.0" text="Korttidsparkering" />
+                <Button layoutX="172.0" layoutY="307.0" mnemonicParsing="false" onAction="#startLangTid" text="Langtidsparkering" />
+                <Button layoutX="296.0" layoutY="307.0" mnemonicParsing="false" onAction="#kjorUt" text="Kjlør ut" />
+                <TextField fx:id="txtBilnummer" layoutX="48.0" layoutY="118.0" promptText="Registreringsnummer" />
+                <Label layoutX="48.0" layoutY="57.0" prefHeight="52.0" prefWidth="277.0" text="Parkeringsautomat">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblAvgift" layoutX="48.0" layoutY="169.0" prefHeight="119.0" prefWidth="313.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
