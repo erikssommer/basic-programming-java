@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Bil {
+
     public String bilNummer;
     public Date startTid;
     public int plass;
@@ -17,10 +18,11 @@ public class Bil {
 
     public String formaterKvittering(){
         // formater kvitteringen etter oppgitt format
-        String startDatoTid = new SimpleDateFormat("dd.MM.YYYY HH:mm").format(startTid);
-        String na = new SimpleDateFormat("dd.MM.YYYY HH:mm").format(new Date());
-        return "Kvittering for bilreg: " + bilNummer + "\nStartid: " + startDatoTid + " til " + na + "\n" +
-                "Betalt " + avgift() + "kr";
+        String startDatoTid = new SimpleDateFormat("dd.MM.yyyy HH:mm").format(startTid);
+        String datoNa = new SimpleDateFormat("dd.MM.yyyy HH:mm").format(new Date());
+
+        return "Kvitering for bil med regnummer " + bilNummer + ":\nStarttid " + startDatoTid + " til" + datoNa + "\n" +
+                "Avgift: " + avgift() + "kr";
     }
 
     public double getPris(){
@@ -31,11 +33,12 @@ public class Bil {
             return 10;
         }
     }
+
     public double avgift(){
         // regner ut tiden som er gått i timer og ganger med prisen
         Date na = new Date();
-        double varighet = na.getTime() - startTid.getTime();
-        int timer = (int)varighet / 10_000;
-        return timer * getPris();
+        long varighet = na.getTime() - startTid.getTime();
+        int timer = (int)varighet/10_000;
+        return  timer * getPris();
     }
 }

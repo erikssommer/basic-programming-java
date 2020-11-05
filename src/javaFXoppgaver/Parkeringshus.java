@@ -4,26 +4,26 @@ import java.util.ArrayList;
 
 public class Parkeringshus {
     // opprett arrayet av biler
-    public ArrayList<Bil> liste = new ArrayList<>();
+    private ArrayList<Bil> billiste = new ArrayList<>();
 
     public void reserverPlass(Bil enBil){
         // legg bilen i arrayet
-        liste.add(enBil);
+        billiste.add(enBil);
     }
 
-    public String frigjørPlass(String bilNummeret){
+    public String frigjorPlass(String bilNummeret){
         /*
          ** må finne bilen i arrayet
          ** når den er funnet slett den fra arrayet
          ** og formater kvitteringen som returneres
          ** dersom bilen ikke finnes skal man returnere en passenede tekst
          */
-        for (Bil bil : liste){
-            if (bil.bilNummer.equals(bilNummeret)){
-                liste.remove(bil);
-                return bil.formaterKvittering();
+        for (Bil enBil : billiste){
+            if (enBil.bilNummer.equals(bilNummeret)){
+                billiste.remove(enBil);
+                return enBil.formaterKvittering();
             }
         }
-        return "Fant ikke bilen i listen!";
+        return "Bilen er ikke å finne i systemet";
     }
 }
