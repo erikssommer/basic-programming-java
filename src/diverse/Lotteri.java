@@ -9,6 +9,7 @@ public class Lotteri {
         for (int i = 0; i < loddbok.length; i++){
             if (loddbok[i] != null){
                 loddbok[i] = nyttLodd;
+                antallSolgte++;
                 return true;
             }
         }
