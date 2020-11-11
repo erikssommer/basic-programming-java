@@ -28,6 +28,6 @@ public class Ansatt extends Person{
 
     @Override
     public String toString(){
-        return "Ansatt: \n" + super.toString() + ", fagfelt: " + fagfelt + ", ansattnummer " + ansattnr;
+        return "Ansatt: \n" + super.toString() + ", fagfelt: " + fagfelt + ", ansattnummer: " + ansattnr + "\n";
     }
 }

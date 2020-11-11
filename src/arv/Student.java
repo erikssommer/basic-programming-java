@@ -28,6 +28,6 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return "Student: \n" + super.toString() + ", studium: " + studium + ", studentnummer " + studentnr;
+        return "Student: \n" + super.toString() + ", studium: " + studium + ", studentnummer: " + studentnr + "\n";
     }
 }
