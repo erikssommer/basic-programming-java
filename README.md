@@ -1,8 +1,6 @@
 # OppgLfProgH20
 Løsningsforsalg til oppgaver i [DAPE1400-1 20H Programmering](https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1400/2020/HØST) ved OsloMet
 
-Oppdateres hver onsdag med løsninger til ukens oppgaver
-
 ## Emnesammendrag 📝💹🏝
 1. Introduksjon 🕹
     - Bli kjent med IDE, laste ned jdk
