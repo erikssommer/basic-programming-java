@@ -52,3 +52,7 @@ Løsningsforsalg til oppgaver i [DAPE1400-1 20H Programmering](https://student.o
     - toString()-metode
     - Statiske variabler
     - Pakker
+13. Arv 👩‍👧‍👦
+    - Bruk av kodeordet exstends og super
+    - Klasser som deler attributter/egenskaper kan ha en felles klasse for de.
+    - Person, Ansatt og Student er brukt som eksempel
