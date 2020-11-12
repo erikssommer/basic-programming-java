@@ -27,6 +27,16 @@ public class Ansatt extends Person{
     }
 
     @Override
+    String getSkole() {
+        return "OsloMet";
+    }
+
+    @Override
+    public void skirvSkole() {
+        System.out.println(getSkole());
+    }
+
+    @Override
     public String toString(){
         return "Ansatt: \n" + super.toString() + ", fagfelt: " + fagfelt + ", ansattnummer: " + ansattnr + "\n";
     }

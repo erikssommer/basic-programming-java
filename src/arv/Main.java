@@ -13,6 +13,7 @@ public class Main {
         personListe.add(ansatt);
 
         for (Person enPerson : personListe){
+            enPerson.skirvSkole();
             System.out.println(enPerson);
         }
     }

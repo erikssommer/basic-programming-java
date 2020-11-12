@@ -27,6 +27,16 @@ public class Student extends Person{
     }
 
     @Override
+    public String getSkole() {
+        return "OsloMet";
+    }
+
+    @Override
+    public void skirvSkole() {
+        System.out.println(getSkole());
+    }
+
+    @Override
     public String toString() {
         return "Student: \n" + super.toString() + ", studium: " + studium + ", studentnummer: " + studentnr + "\n";
     }

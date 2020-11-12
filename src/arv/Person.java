@@ -1,6 +1,6 @@
 package arv;
 
-public class Person {
+public abstract class Person {
     private String navn;
     private int alder;
     private String email;
@@ -10,6 +10,9 @@ public class Person {
         this.alder = alder;
         this.email = email;
     }
+
+    abstract String getSkole();
+    abstract void skirvSkole();
 
     public String getNavn() {
         return navn;
