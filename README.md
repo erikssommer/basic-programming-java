@@ -53,6 +53,6 @@ Løsningsforsalg til oppgaver i [DAPE1400-1 20H Programmering](https://student.o
     - Statiske variabler
     - Pakker
 13. Arv 👩‍👧‍👦
-    - Bruk av kodeordet exstends og super
+    - Bruk av kodeordet extends og super
     - Klasser som deler attributter/egenskaper kan ha en felles klasse for de.
     - Person, Ansatt og Student er brukt som eksempel
