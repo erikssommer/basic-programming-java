@@ -1,4 +1,4 @@
-package oving;
+package oving47;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -21,7 +21,7 @@ class Person{
 }
 
 class Register{
-    private ArrayList<Person> personregister = new ArrayList<>();
+    private final ArrayList<Person> personregister = new ArrayList<>();
 
     public void registrerPerson(String navn, String personnummer){
         /* sjekk om personnummeret finnes fra før
